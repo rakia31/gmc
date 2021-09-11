@@ -1,0 +1,54 @@
+multiply = function (a, b) {
+  return a * b;
+}
+
+/////////////////////////
+function duplicateEncode(word){
+   const letters = word.toLowerCase().split('');
+  const counts = letters.reduce((ct, ltr) => ((ct[ltr] = (ct[ltr] || 0) + 1), ct), {});
+  return letters.map(letter => counts[letter] === 1 ? '(' : ')').join('')
+  ////////////
+  
+}
+var countBits = function(n) {
+  let rakia = (n).toString(2).split("");
+
+  let result = rakia.reduce((sum, num) => sum + Number(num),0);
+  return result;
+  
+
+};
+
+//////
+function getCount(str) {
+  var vowelsCount = 0;
+
+  var m = str.match(/[aeiou]/gi);
+  return m === null ? 0 : m.length;
+  return vowelsCount;
+///////
+function duplicateEncode(word){
+   const letters = word.toLowerCase().split('');
+  const counts = letters.reduce((ct, ltr) => ((ct[ltr] = (ct[ltr] || 0) + 1), ct), {});
+  return letters.map(letter => counts[letter] === 1 ? '(' : ')').join('')
+  ///////
+  
+}
+function isTriangle(a,b,c)
+{
+   return a + b > c && a + c > b && c + b > a;
+}
+
+
+}
+////////
+function toCamelCase(str){
+  str = str.split('');
+  return str.map(function(el, i){
+    if(el == '-' || el == '_'){
+      el = str[i+1].toUpperCase();
+      str.splice(i+1, 1);
+    }
+    return el;
+  }).join('');
+}
